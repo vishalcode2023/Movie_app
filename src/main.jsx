@@ -1,4 +1,4 @@
-import { StrictMode } from "react";
+import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
@@ -11,7 +11,8 @@ import DetailsContext from "./Context/DetailsContext.jsx";
 import Popularcontext from "./Context/Popularcontext.jsx";
 
 createRoot(document.getElementById("root")).render(
-    <BrowserRouter>
+  <StrictMode>
+    <BrowserRouter basename="/React_project">
       <Context>
         <HeaderWallpaper>
           <CardContext>
@@ -26,4 +27,5 @@ createRoot(document.getElementById("root")).render(
         </HeaderWallpaper>
       </Context>
     </BrowserRouter>
+    </StrictMode>
 );
