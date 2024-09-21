@@ -12,7 +12,7 @@ import Popularcontext from "./Context/Popularcontext.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter basename="/React_project">
+    <BrowserRouter>
       <Context>
         <HeaderWallpaper>
           <CardContext>
