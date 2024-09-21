@@ -11,7 +11,6 @@ import DetailsContext from "./Context/DetailsContext.jsx";
 import Popularcontext from "./Context/Popularcontext.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
     <BrowserRouter>
       <Context>
         <HeaderWallpaper>
@@ -27,5 +26,4 @@ createRoot(document.getElementById("root")).render(
         </HeaderWallpaper>
       </Context>
     </BrowserRouter>
-  </StrictMode>
 );
